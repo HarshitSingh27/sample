@@ -1,0 +1,64 @@
+<body id="bo">
+    
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 style="color: white;">INCEPTION WAVE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Tasks</a>
+                </li>
+                <li>
+                    <a href="#">Need Help?</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="content">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light navv">
+                    <a class="navbar-brand" href="#">
+                      <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
+                      <p class="navit">INCEPTION WAVE</p>
+                    </a>
+                    <a class="navbar-brand" routerLink="/adminprofile">
+                        <img src="../../../assets/img2.png" width="40" height="40" class="d-inline-block align-top" style="margin-left: 0px;margin-top: -10px;">
+                        <p class="navit">PROFILE</p>
+                      </a>
+                  </nav>
+                  <hr style="border: 1px black solid;margin-left: 35px;width: 1420px;">
+                <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin-left: -10px;margin-top: 0px;">
+                	<i class="fas fa-align-left"></i>
+                </button>
+        </div>
+        <div class="card" style="width: 78rem; min-height: 42rem;margin-left: 240px;margin-top: -40px;">
+            <h1 style="text-align: center;margin-top: 20px;">TASK  1</h1>
+            <h3 style="float: left;margin-left: 100px;">Deadline: DD/MM/YYYY</h3>
+            <h3 style="float: right;margin-left: 900px;margin-top: -40px;">Status: Pending</h3>
+            <a class="tname btn" onclick="alert('Task updated to completed')" style="width: 150px;padding-top: 10px;margin-left: 450px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);"(click)="approve(user._id)" type="button ">Completed</a>
+            <a class="tname btn" onclick="alert('Task updated to incompleted')" style="width: 150px;padding-top: 10px;margin-left: 650px;background-color: red;margin-top: -48px;border-color: red;"(click)="reject(user._id)" type="button ">Incompleted</a>
+            <div class="pfile1" style="margin-left: 150px">
+                <br><br>
+                <p>
+                    <h4>{{x.username}}</h4>
+                    <!-- Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).
+                    [1] Web development can range from developing a simple single static page of plain text to complex web-based internet applications 
+                    (web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly 
+                    refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, 
+                    web server and network security configuration, and e-commerce development.Among web professionals, "web development" usually refers
+                    to the main non-design aspects of building websites: writing markup and coding.[2] Web development may use content management 
+                    systems (CMS) to make content changes easier and available with basic technical skills.For larger organizations and businesses, web 
+                    development teams can consist of hundreds of people (web developers) and follow standard methods like Agile methodologies while 
+                    developing websites.   -->
+                   <p> {{users1.taskdetails}}</p>
+                <br><br><br>
+            </div>
+            <br><br>
+      </div>
+    </div>
